@@ -5,7 +5,7 @@ import dataanalysis.core as da
 
 class TestNode(da.DataAnalysis):
     def main(self):
-        self.data=dict{'test':'data'}
+        self.data={'test':'data'}
         open("data-file.txt","w").write("data")
         self.data_file=da.DataFile("data-file.txt")
     
